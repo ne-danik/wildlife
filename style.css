@@ -1,0 +1,655 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+  color: #666666;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+  text-align: center;
+  background-color: #cccccc;
+}
+
+a {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Блок HERO */
+.hero {
+  padding: 20px 0;
+  width: 100%;
+  height: 780px;
+  background-image: url("../wildlife/assets/hero.png");
+  background-color: #02160b;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #F7F7F7;
+  width: 240px;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+.logo__icon {
+  display: block;
+  margin-right: 15px;
+  width: 70px;
+  height: 60px;
+  background-image: url("../wildlife/assets/logo.svg");
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 480px;
+}
+
+.nav__item,
+.nav__item a {
+  color: #F7F7F7;
+  font-size: 23px;
+  line-height: 60px;
+  border-bottom: 0px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.nav__item a:hover,
+.nav__item a a:hover {
+  border-bottom: 1px solid #F7F7F7;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.icon_search {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../wildlife/assets/search.svg");
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.icon_search:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.section {
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 240px;
+  width: 1200px;
+}
+
+.survival {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.survival .title {
+  color: #CD6326;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 72px;
+  letter-spacing: 2px;
+}
+
+.survival .content {
+  margin: 50px 0;
+  width: 274px;
+  color: #F7F7F7;
+}
+
+.latest_articles {
+  padding-bottom: 239px;
+}
+
+.latest_articles .title {
+  color: #333333;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 72px;
+}
+
+.latest_articles .content {
+  margin-top: 20px;
+}
+
+.slider {
+  margin-top: 129px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.slider__item {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 360px;
+}
+
+.slider__item .image {
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+.slider__item:hover > .image {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.slider__item .img_title {
+  color: #F7F7F7;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 36px;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 77px;
+}
+
+.slider__item .img_signature {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  color: #F7F7F7;
+  font-family: 'Open Sans';
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 27px;
+}
+
+.slider__button {
+  width: 30px;
+  height: 70px;
+}
+
+.slider__button.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-size: 100%;
+  -webkit-transition: background-size 0.2s;
+  transition: background-size 0.2s;
+}
+
+.slider__button.button.prev {
+  background-image: url("../wildlife/assets/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__button.button.next {
+  background-image: url("../wildlife/assets/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__button.button:hover {
+  background-size: 110%;
+  -webkit-transition: background-size 0.2s;
+  transition: background-size 0.2s;
+}
+
+.get_notified {
+  padding-bottom: 240px;
+}
+
+.get_notified .title {
+  color: #333333;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 40.5px;
+}
+
+.get_notified .form {
+  margin-top: 60px;
+}
+
+.get_notified .send {
+  margin: 0;
+  padding: 0 15px;
+  outline: 0;
+  border-top: 1px solid #666666;
+  border-right: 0;
+  border-bottom: 1px solid #666666;
+  border-left: 1px solid #666666;
+  border-radius: 2px 0 0 2px;
+  width: 540px;
+  height: 60px;
+  color: #666666;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: normal;
+  background-color: transparent;
+}
+
+/* Блок FOOTER */
+.footer {
+  padding: 150px 0;
+  background-image: url("assets/footer.jpg");
+  background-color: #181617;
+}
+
+.footer_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 240px;
+}
+
+.social__item a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.social__item a:hover {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.social .facebook {
+  background-image: url("assets/facebook.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social .instagram {
+  background-image: url("assets/instagram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social .pinterest {
+  background-image: url("assets/pinterest.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social .telegram {
+  background-image: url("assets/telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Кнопки BUTTONS*/
+.button-primary {
+  position: relative;
+  padding: 14px 40px;
+  outline: none;
+  border: 2px solid #CD6326;
+  border-radius: 5px;
+  background-color: #CD6326;
+  color: #F7F7F7;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.button-primary:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  content: '';
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.button-primary:before {
+  display: block;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button-primary.effect:after {
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  border: 2px solid #E39128;
+  background-color: #E39128;
+  -webkit-transition: -webkit-transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s;
+  -webkit-transition: opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+  transition: opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+  transition: transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s;
+  transition: transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+}
+
+.button-primary.effect.sub-b:after {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+}
+
+.button-primary.effect.sub-b:hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.button-primary.effect.sub-b:focus {
+  border-color: #8F5613;
+  background-color: #8F5613;
+  -webkit-transition: background-color 0.1s, border-color 0.1s;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+.button-primary.effect.sub-b:focus:after {
+  border-color: #8F5613;
+  background-color: #8F5613;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.1s, border-color 0.1s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+}
+
+.button-secondary {
+  position: relative;
+  padding: 14px 40px;
+  outline: none;
+  border: 2px solid #CD6326;
+  border-radius: 5px;
+  background-color: #CD6326;
+  color: #F7F7F7;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  cursor: pointer;
+  padding: 9px 23px;
+  border: 2px solid #CD6326;
+  background-color: transparent;
+}
+
+.button-secondary:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  content: '';
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.button-secondary:before {
+  display: block;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button-secondary.effect:after {
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  border: 2px solid #E39128;
+  background-color: #E39128;
+  -webkit-transition: -webkit-transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s;
+  -webkit-transition: opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+  transition: opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+  transition: transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s;
+  transition: transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+}
+
+.button-secondary.effect.sub-b:after {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+}
+
+.button-secondary.effect.sub-b:hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.button-secondary.effect.sub-b:focus {
+  border-color: #8F5613;
+  background-color: #8F5613;
+  -webkit-transition: background-color 0.1s, border-color 0.1s;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+.button-secondary.effect.sub-b:focus:after {
+  border-color: #8F5613;
+  background-color: #8F5613;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.1s, border-color 0.1s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+}
+
+.button-secondary:after {
+  border: 2px solid #CD6326;
+}
+
+.button-secondary.effect:after {
+  border-color: #CD6326;
+  background-color: #CD6326;
+  -webkit-transition: -webkit-transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s;
+  -webkit-transition: opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+  transition: opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+  transition: transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s;
+  transition: transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+}
+
+.button-send {
+  position: relative;
+  padding: 14px 40px;
+  outline: none;
+  border: 2px solid #CD6326;
+  border-radius: 5px;
+  background-color: #CD6326;
+  color: #F7F7F7;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  cursor: pointer;
+  padding: 14px 32px;
+  border-radius: 0 5px 5px 0;
+  -webkit-transition: background-color 0.1s, border-color 0.1s;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+.button-send:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  content: '';
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.button-send:before {
+  display: block;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button-send.effect:after {
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  border: 2px solid #E39128;
+  background-color: #E39128;
+  -webkit-transition: -webkit-transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s;
+  -webkit-transition: opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+  transition: opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+  transition: transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s;
+  transition: transform 0.1s, opacity 0.1s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.1s;
+}
+
+.button-send.effect.sub-b:after {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+}
+
+.button-send.effect.sub-b:hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.button-send.effect.sub-b:focus {
+  border-color: #8F5613;
+  background-color: #8F5613;
+  -webkit-transition: background-color 0.1s, border-color 0.1s;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+.button-send.effect.sub-b:focus:after {
+  border-color: #8F5613;
+  background-color: #8F5613;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.1s, border-color 0.1s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.1s, border-color 0.1s, -webkit-transform 0.3s;
+}
+
+.button-send:hover {
+  border-color: #E39128;
+  background-color: #E39128;
+  -webkit-transition: background-color 0.1s, border-color 0.1s;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+/*# sourceMappingURL=style.css.map */
